@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АС-КОНСАЛТИНГ - Войти в личный кабинет</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- auth -->
+    <div class="auth" id="auth">
+        <div class="auth__left">
+            <div class="auth__wrapper">
+                <a href="index.html" class="auth__back back-btn">
+                    <svg class="back-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-arrow-back"></use>
+                    </svg>
+                    <span>Вернуться на сайт</span>
+                </a>
+                <div class="auth__body">
+                    <h1 class="auth__heading">Войти в личный кабинет</h1>
+                    <form action="#" class="auth-form auth__form">
+                        <div class="input-control auth-form__input">
+                            <span class="input-control__subtitle">Ваш номер телефона*</span>
+                            <div class="input-control__inner">
+                                <input type="tel" class="input-control__input auth-form__input" id="auth-tel-login" placeholder="+7 ___ __ - __ - ___" data-inputmask="'mask': '+7 999 99 - 99 - 999'" required>
+                            </div>
+                        </div>
+                        <div class="input-control auth-form__input">
+                            <span class="input-control__subtitle">Ваш пароль*</span>
+                            <div class="input-control__inner">
+                                <input type="password" class="input-control__input auth-form__input" id="auth-password-login" placeholder="" required>
+                                <button class="input-control__eye">
+                                    <svg class="input-control__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-eye"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="auth-form__inner">
+                            <label for="personal-data" class="square-checkbox">
+                                <input type="checkbox" id="personal-data" class="square-checkbox__input">
+                                <div class="square-checkbox__icon-wrap">
+                                    <svg class="square-checkbox__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-mark"></use>
+                                    </svg>
+                                </div>
+                                <span class="square-checkbox__label">Запомнить пароль</span>
+                            </label>
+                            <a href="restore-password.html" class="auth-form__link">Забыли пароль?</a>
+                        </div>
+                        <button class="auth-form__btn btn">Войти в личный&nbsp;кабинет</button>
+                        <span class="auth-form__help">У Вас нет аккаунта? <a href="register.html">Зарегистрировать личный кабинет</a></span>
+                    </form>
+                </div>
+            </div>
+            <p class="auth__copyright">© «АС-Консалтинг», юридические услуги в Екатеринбурге, 2022</p>
+        </div>
+        <div class="auth__right">
+            <a href="#" class="logotype auth__logotype">
+                <img src="img/dist/logotype.svg" alt="АС-КОНСАЛТИНГ">
+            </a>
+            <nav class="auth-nav">
+                <ul class="auth-nav__list">
+                    <li class="auth-nav__item">
+                        <a href="#" class="auth-nav__link">Ссылка 1</a>
+                    </li>
+                    <li class="auth-nav__item">
+                        <a href="#" class="auth-nav__link">Ссылка 2</a>
+                    </li>
+                    <li class="auth-nav__item">
+                        <a href="#" class="auth-nav__link">Ссылка 3</a>
+                    </li>
+                    <li class="auth-nav__item">
+                        <a href="#" class="auth-nav__link">Ссылка 4</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                <span class="hamburger__inner"></span>
+                <span class="hamburger__inner"></span>
+                <span class="hamburger__inner"></span>
+            </button>
+        </div>
+    </div>
+    <!-- end of auth -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
