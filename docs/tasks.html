@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АС-КОНСАЛТИНГ - Личный кабинет</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- lk -->
+    <div class="lk" id="lk">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__wrapper">
+                <div class="sidebar__top">
+                    <a href="index.html" class="logotype sidebar__logotype">
+                        <img src="img/dist/logotype.svg" alt="АС-КОНСАЛТИНГ">
+                    </a>
+                    <button class="sidebar__close" aria-label="Закрыть">
+                        <svg class="sidebar__close-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="sidebar__nav">
+                    <nav class="sidebar-nav">
+                        <ul class="sidebar-nav__list">
+                            <li class="sidebar-nav__item">
+                                <a href="index.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-home"></use>
+                                    </svg>
+                                    <span>Главная</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="profile.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-user"></use>
+                                    </svg>
+                                    <span>Мой профиль</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="orders.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-work"></use>
+                                    </svg>
+                                    <span>Мои заказы</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="bonus-account.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-award"></use>
+                                    </svg>
+                                    <span>Бонусный счет</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="payments.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-dollar"></use>
+                                    </svg>
+                                    <span>Счета и оплаты</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item sidebar-nav__item--active">
+                                <a href="tasks.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-checklist"></use>
+                                    </svg>
+                                    <span>Задачи</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="files.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-card"></use>
+                                    </svg>
+                                    <span>Файлы</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="#" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-folder"></use>
+                                    </svg>
+                                    <span>Чат с менеджером</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="sidebar__hide">
+                        <svg class="sidebar__hide-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-hide"></use>
+                        </svg>
+                        <span>Скрыть меню</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="lk__wrap">
+            <!-- header -->
+            <header class="header" id="header">
+                <div class="header__wrapper">
+                    <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                    </button>
+                    <a href="#" class="c-user-info">
+                        <picture class="c-user-info__img">
+                            <img src="img/dist/ava-plug.svg" alt="Image">
+                        </picture>
+                        <div class="c-user-info__body">
+                            <div class="c-user-info__elem">
+                                <svg class="c-user-info__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <span>+7 (999) 999-99-99</span>
+                            </div>
+                            <div class="c-user-info__elem">
+                                <svg class="c-user-info__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-id"></use>
+                                </svg>
+                                <span>ID:1234567</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="c-user-dropdown">
+                        <div class="c-user-dropdown__info">
+                            <picture class="c-user-dropdown__img">
+                                <img src="img/dist/ava-plug.svg" alt="Image">
+                            </picture>
+                            <div class="c-user-dropdown__body">
+                                <h4 class="c-user-dropdown__title">Загрузить фото</h4>
+                                <p class="c-user-dropdown__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
+                            </div>
+                        </div>
+                        <ul class="c-user-dropdown__list">
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-phone-stroke"></use>
+                                    </svg>
+                                    <span>+7 (999) 999-99-99</span>
+                                </a>
+                            </li>
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-id"></use>
+                                    </svg>
+                                    <span>ID:1234567</span>
+                                </a>
+                            </li>
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span>mail@gmail.com</span>
+                                </a>
+                            </li>
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-exit"></use>
+                                    </svg>
+                                    <span>Выйти из аккаунта</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- end of header -->
+            <div class="lk__container">
+                <div class="lk__wrapper">
+                    <div class="lk__block lk__block--wide">
+                        <div class="lk__top">
+                            <h1 class="lk__heading">Мои задачи</h1>
+                            <a href="tasks.html" class="add-btn lk__more-btn">
+                                <span class="add-btn__text">Все задачи</span>
+                                <svg class="add-btn__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-more"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="lk__table" data-simplebar>
+                            <table class="lk-table">
+                                <thead class="lk-table__head">
+                                    <tr class="lk-table__row">
+                                        <td class="lk-table__elem">
+                                            <select class="lk-table__select select">
+                                                <option value="0">Задача</option>
+                                                <option value="1">По убыванию</option>
+                                                <option value="2">По возрастанию</option>
+                                            </select>
+                                        </td>
+                                        <td class="lk-table__elem">
+                                            <select class="lk-table__select select">
+                                                <option value="0">Статус</option>
+                                                <option value="1">По убыванию</option>
+                                                <option value="2">По возрастанию</option>
+                                            </select>
+                                        </td>
+                                        <td class="lk-table__elem">
+                                            <select class="lk-table__select select">
+                                                <option value="0">Суть</option>
+                                                <option value="1">По убыванию</option>
+                                                <option value="2">По возрастанию</option>
+                                            </select>
+                                        </td>
+                                        <td class="lk-table__elem">
+                                            <select class="lk-table__select select">
+                                                <option value="0">Ответственный</option>
+                                                <option value="1">По убыванию</option>
+                                                <option value="2">По возрастанию</option>
+                                            </select>
+                                        </td>
+                                        <td class="lk-table__elem">
+                                            <select class="lk-table__select select">
+                                                <option value="0">Дедлайн</option>
+                                                <option value="1">По убыванию</option>
+                                                <option value="2">По возрастанию</option>
+                                            </select>
+                                        </td>
+                                        <td class="lk-table__elem">
+                                            <select class="lk-table__select select">
+                                                <option value="0">Комментарии</option>
+                                                <option value="1">По убыванию</option>
+                                                <option value="2">По возрастанию</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody class="lk-table__body">
+                                    <tr class="lk-table__row">
+                                        <td class="lk-table__elem">Подписать договор</td>
+                                        <td class="lk-table__elem">Назначена </td>
+                                        <td class="lk-table__elem">Согласовать и подписать договор в двух экземплярах.</td>
+                                        <td class="lk-table__elem">Иванов И.И.</td>
+                                        <td class="lk-table__elem">04.04.2022</td>
+                                        <td class="lk-table__elem"></td>
+                                    </tr>
+                                    <tr class="lk-table__row">
+                                        <td class="lk-table__elem">Подписать договор</td>
+                                        <td class="lk-table__elem">Назначена </td>
+                                        <td class="lk-table__elem">Согласовать и подписать договор в двух экземплярах.</td>
+                                        <td class="lk-table__elem">Иванов И.И.</td>
+                                        <td class="lk-table__elem">28.03.2022</td>
+                                        <td class="lk-table__elem"></td>
+                                    </tr>
+                                    <tr class="lk-table__row lk-table__row--disabled">
+                                        <td class="lk-table__elem">Подписать договор</td>
+                                        <td class="lk-table__elem lk-table__elem--red">Просрочен </td>
+                                        <td class="lk-table__elem">Согласовать и подписать договор в двух экземплярах.</td>
+                                        <td class="lk-table__elem">Иванов И.И.</td>
+                                        <td class="lk-table__elem">22.03.2022</td>
+                                        <td class="lk-table__elem"></td>
+                                    </tr>
+                                    <tr class="lk-table__row lk-table__row--done">
+                                        <td class="lk-table__elem">Подписать договор</td>
+                                        <td class="lk-table__elem lk-table__elem--green">Завершён </td>
+                                        <td class="lk-table__elem">Согласовать и подписать договор в двух экземплярах.</td>
+                                        <td class="lk-table__elem">Иванов И.И.</td>
+                                        <td class="lk-table__elem">15.03.2022</td>
+                                        <td class="lk-table__elem"></td>
+                                    </tr>
+                                    <tr class="lk-table__row lk-table__row--done">
+                                        <td class="lk-table__elem">Подписать договор</td>
+                                        <td class="lk-table__elem lk-table__elem--green">Завершён </td>
+                                        <td class="lk-table__elem">Согласовать и подписать договор в двух экземплярах.</td>
+                                        <td class="lk-table__elem">Иванов И.И.</td>
+                                        <td class="lk-table__elem">12.03.2022</td>
+                                        <td class="lk-table__elem"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="lk__bottom lk__bottom--end">
+                            <a href="#" class="lk__btn btn modal-btn" data-id="new-task">Новая задача</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of lk -->
+    <!-- modal -->
+    <div class="modal" id="new-task">
+        <div class="modal__wrapper modal__wrapper--wide">
+            <button class="modal__close-btn modal__close" aria-label="Закрыть">
+                <svg class="modal__close-icon">
+                    <use xlink:href="img/dist/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="modal__top">
+                <h2 class="modal__title">Новая задача</h2>
+            </div>
+            <form action="#" class="modal-form modal__form">
+                <div class="modal-form__inner">
+                    <div class="input-control modal-form__input">
+                        <span class="input-control__subtitle input-control__subtitle--blue">Название задачи*</span>
+                        <div class="input-control__inner">
+                            <input type="text" class="input-control__input" placeholder="Краткое описание задачи">
+                        </div>
+                    </div>
+                    <div class="input-control modal-form__input">
+                        <span class="input-control__subtitle input-control__subtitle--blue">Дедлайн*</span>
+                        <div class="input-control__inner">
+                            <select class="input-control__select select">
+                                <option value="0">Выберите дату дедлайна</option>
+                                <option value="1">06.06.2022</option>
+                                <option value="2">07.06.2022</option>
+                                <option value="3">08.06.2022</option>
+                                <option value="4">09.06.2022</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-form__inner">
+                    <div class="input-control modal-form__input">
+                        <span class="input-control__subtitle input-control__subtitle--blue">Суть*</span>
+                        <div class="input-control__inner">
+                            <textarea class="input-control__textarea" placeholder="Описание задачи"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-control modal-form__input">
+                        <span class="input-control__subtitle input-control__subtitle--blue">Комментарии по задаче*</span>
+                        <div class="input-control__inner">
+                            <textarea class="input-control__textarea" placeholder="Дополнительные комментарии по задаче"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-form__bottom modal-form__bottom--flex">
+                    <button class="modal-form__btn btn">Отправить</button>
+                    <a href="#" class="modal-form__btn btn btn--transparent modal__close">Закрыть</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
+    <!-- end of modal -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

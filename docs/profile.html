@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АС-КОНСАЛТИНГ - Личный кабинет</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- lk -->
+    <div class="lk" id="lk">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__wrapper">
+                <div class="sidebar__top">
+                    <a href="index.html" class="logotype sidebar__logotype">
+                        <img src="img/dist/logotype.svg" alt="АС-КОНСАЛТИНГ">
+                    </a>
+                    <button class="sidebar__close" aria-label="Закрыть">
+                        <svg class="sidebar__close-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="sidebar__nav">
+                    <nav class="sidebar-nav">
+                        <ul class="sidebar-nav__list">
+                            <li class="sidebar-nav__item">
+                                <a href="index.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-home"></use>
+                                    </svg>
+                                    <span>Главная</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item sidebar-nav__item--active">
+                                <a href="profile.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-user"></use>
+                                    </svg>
+                                    <span>Мой профиль</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="orders.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-work"></use>
+                                    </svg>
+                                    <span>Мои заказы</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="bonus-account.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-award"></use>
+                                    </svg>
+                                    <span>Бонусный счет</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="payments.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-dollar"></use>
+                                    </svg>
+                                    <span>Счета и оплаты</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="tasks.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-checklist"></use>
+                                    </svg>
+                                    <span>Задачи</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="files.html" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-card"></use>
+                                    </svg>
+                                    <span>Файлы</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="#" class="sidebar-nav__link">
+                                    <svg class="sidebar-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#nav-folder"></use>
+                                    </svg>
+                                    <span>Чат с менеджером</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="sidebar__hide">
+                        <svg class="sidebar__hide-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-hide"></use>
+                        </svg>
+                        <span>Скрыть меню</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="lk__wrap">
+            <!-- header -->
+            <header class="header" id="header">
+                <div class="header__wrapper">
+                    <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                    </button>
+                    <a href="#" class="c-user-info">
+                        <picture class="c-user-info__img">
+                            <img src="img/dist/ava-plug.svg" alt="Image">
+                        </picture>
+                        <div class="c-user-info__body">
+                            <div class="c-user-info__elem">
+                                <svg class="c-user-info__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <span>+7 (999) 999-99-99</span>
+                            </div>
+                            <div class="c-user-info__elem">
+                                <svg class="c-user-info__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-id"></use>
+                                </svg>
+                                <span>ID:1234567</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="c-user-dropdown">
+                        <div class="c-user-dropdown__info">
+                            <picture class="c-user-dropdown__img">
+                                <img src="img/dist/ava-plug.svg" alt="Image">
+                            </picture>
+                            <div class="c-user-dropdown__body">
+                                <h4 class="c-user-dropdown__title">Загрузить фото</h4>
+                                <p class="c-user-dropdown__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
+                            </div>
+                        </div>
+                        <ul class="c-user-dropdown__list">
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-phone-stroke"></use>
+                                    </svg>
+                                    <span>+7 (999) 999-99-99</span>
+                                </a>
+                            </li>
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-id"></use>
+                                    </svg>
+                                    <span>ID:1234567</span>
+                                </a>
+                            </li>
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span>mail@gmail.com</span>
+                                </a>
+                            </li>
+                            <li class="c-user-dropdown__item">
+                                <a href="#" class="c-user-dropdown__link">
+                                    <svg class="c-user-dropdown__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-exit"></use>
+                                    </svg>
+                                    <span>Выйти из аккаунта</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- end of header -->
+            <div class="lk__container">
+                <div class="lk__wrapper lk__wrapper--start lk__wrapper--reverse">
+                    <div class="lk__block lk__block--seventy">
+                        <div class="lk__top">
+                            <h1 class="lk__heading">Мой профиль</h1>
+                        </div>
+                        <form action="#" class="personal-data">
+                            <div class="personal-data__block">
+                                <span class="personal-data__subtitle">Фамилия, Имя, Отчество</span>
+                                <div class="personal-data__inner">
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-surname" placeholder="Фамилия" value="Смирнов" required>
+                                            <label for="data-surname" class="input-control__label">Фамилия</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-name" placeholder="Имя" required>
+                                            <label for="data-name" class="input-control__label">Имя</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-patronymic" placeholder="Отчество" required>
+                                            <label for="data-patronymic" class="input-control__label">Отчество</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personal-data__block">
+                                <span class="personal-data__subtitle">Контактные данные</span>
+                                <div class="personal-data__inner">
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-tel-01" placeholder="Телефон" data-inputmask="'mask': '+7(999) 999-99-99'" value="+79999999999" required>
+                                            <label for="data-tel-01" class="input-control__label">Телефон</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-tel-comment-01" placeholder="Комментарий" value="Звонить только по вечерам" required>
+                                            <label for="data-tel-comment-01" class="input-control__label">Комментарий</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="personal-data__inner">
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-tel-01" placeholder="Телефон" data-inputmask="'mask': '+7(999) 999-99-99'" value="+79999999999" required>
+                                            <label for="data-tel-01" class="input-control__label">Телефон</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-tel-comment-01" placeholder="Комментарий" value="В экстренных случаях" required>
+                                            <label for="data-tel-comment-01" class="input-control__label">Комментарий</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="add-btn personal-data__add-btn">
+                                    <svg class="add-btn__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-add"></use>
+                                    </svg>
+                                    <span class="add-btn__text">Добавить номер</span>
+                                </button>
+                            </div>
+                            <div class="personal-data__block">
+                                <div class="personal-data__inner">
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="email" class="input-control__input input-control__input--label" id="data-email-01" placeholder="Электронная почта" value="mail@gmail.com" required>
+                                            <label for="data-email-01" class="input-control__label">Электронная почта</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-control personal-data__input">
+                                        <div class="input-control__inner">
+                                            <input type="text" class="input-control__input input-control__input--label" id="data-email-comment-01" placeholder="Комментарий" value="Можно писать в любое время" required>
+                                            <label for="data-email-comment-01" class="input-control__label">Комментарий</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="add-btn personal-data__add-btn">
+                                    <svg class="add-btn__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-add"></use>
+                                    </svg>
+                                    <span class="add-btn__text">Добавить почту</span>
+                                </button>
+                            </div>
+                            <div class="personal-data__bottom">
+                                <button class="personal-data__btn btn">Сохранить изменения</button>
+                                <a href="#" class="personal-data__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="lk__block lk__block--thirty">
+                        <div class="c-add-photos">
+                            <div class="c-add-photos__info">
+                                <picture class="c-add-photos__img">
+                                    <img src="img/dist/ava-plug.svg" alt="Image">
+                                </picture>
+                                <div class="c-add-photos__body">
+                                    <h4 class="c-add-photos__title">Загрузить фото</h4>
+                                    <p class="c-add-photos__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of lk -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
