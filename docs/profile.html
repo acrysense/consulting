@@ -130,7 +130,8 @@
                         </div>
                     </a>
                     <div class="c-user-dropdown">
-                        <div class="c-user-dropdown__info">
+                        <label for="add-photos-dropdown" class="c-user-dropdown__add">
+                            <input type="file" class="c-user-dropdown__input" id="add-photos-dropdown">
                             <picture class="c-user-dropdown__img">
                                 <img src="img/dist/ava-plug.svg" alt="Image">
                             </picture>
@@ -139,7 +140,7 @@
                                 <h4 class="c-user-dropdown__title">Загрузить фото</h4>
                                 <p class="c-user-dropdown__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
                             </div>
-                        </div>
+                        </label>
                         <ul class="c-user-dropdown__list">
                             <li class="c-user-dropdown__item">
                                 <a href="#" class="c-user-dropdown__link">
@@ -219,7 +220,7 @@
                             </div>
                             <div class="personal-data__block">
                                 <span class="personal-data__subtitle">Контактные данные</span>
-                                <div class="personal-data__inner">
+                                <div class="personal-data__inner personal-data__inner--double">
                                     <div class="input-control personal-data__input">
                                         <div class="input-control__inner">
                                             <input type="text" class="input-control__input input-control__input--label" id="data-tel-01" placeholder="Телефон" data-inputmask="'mask': '+7(999) 999-99-99'" value="+79999999999" required>
@@ -239,7 +240,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="personal-data__inner">
+                                <div class="personal-data__inner personal-data__inner--double">
                                     <div class="input-control personal-data__input">
                                         <div class="input-control__inner">
                                             <input type="text" class="input-control__input input-control__input--label" id="data-tel-01" placeholder="Телефон" data-inputmask="'mask': '+7(999) 999-99-99'" value="+79999999999" required>
@@ -267,7 +268,7 @@
                                 </button>
                             </div>
                             <div class="personal-data__block">
-                                <div class="personal-data__inner">
+                                <div class="personal-data__inner personal-data__inner--double">
                                     <div class="input-control personal-data__input">
                                         <div class="input-control__inner">
                                             <input type="email" class="input-control__input input-control__input--label" id="data-email-01" placeholder="Электронная почта" value="mail@gmail.com" required>
@@ -301,18 +302,17 @@
                         </form>
                     </div>
                     <div class="lk__block lk__block--thirty">
-                        <div class="c-add-photos">
-                            <div class="c-add-photos__info">
-                                <picture class="c-add-photos__img">
-                                    <img src="img/dist/ava-plug.svg" alt="Image">
-                                </picture>
-                                <span class="c-add-photos__icon-add"></span>
-                                <div class="c-add-photos__body">
-                                    <h4 class="c-add-photos__title">Загрузить фото</h4>
-                                    <p class="c-add-photos__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
-                                </div>
+                        <label for="add-photos-profile" class="c-add-photos">
+                            <input type="file" class="c-add-photos__input" id="add-photos-profile">
+                            <picture class="c-add-photos__img">
+                                <img src="img/dist/ava-plug.svg" alt="Image">
+                            </picture>
+                            <span class="c-add-photos__icon-add"></span>
+                            <div class="c-add-photos__body">
+                                <h4 class="c-add-photos__title">Загрузить фото</h4>
+                                <p class="c-add-photos__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
             </div>

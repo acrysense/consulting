@@ -130,15 +130,17 @@
                         </div>
                     </a>
                     <div class="c-user-dropdown">
-                        <div class="c-user-dropdown__info">
+                        <label for="add-photos-dropdown" class="c-user-dropdown__add">
+                            <input type="file" class="c-user-dropdown__input" id="add-photos-dropdown">
                             <picture class="c-user-dropdown__img">
                                 <img src="img/dist/ava-plug.svg" alt="Image">
                             </picture>
+                            <span class="c-user-dropdown__icon-add"></span>
                             <div class="c-user-dropdown__body">
                                 <h4 class="c-user-dropdown__title">Загрузить фото</h4>
                                 <p class="c-user-dropdown__description">Вы можете загрузить файл в формате JPG, GIF или PNG</p>
                             </div>
-                        </div>
+                        </label>
                         <ul class="c-user-dropdown__list">
                             <li class="c-user-dropdown__item">
                                 <a href="#" class="c-user-dropdown__link">
@@ -189,212 +191,221 @@
                         <li class="tabs__item">
                             <button class="tabs__tab">Дополнительные документы</button>
                         </li>
+                        <li class="tabs__item">
+                            <button class="tabs__tab">Дополнительные документы для юр лиц</button>
+                        </li>
                     </ul>
                     <div class="tabs__wrapper tabs__wrapper--active">
-                        <div class="lk__wrapper">
-                            <div class="lk__block lk__block--wide personal-data">
-                                <div class="personal-data__block">
-                                    <span class="personal-data__subtitle">Документ удостоверяющий личность</span>
-                                    <div class="personal-data__inner">
-                                        <div class="input-control personal-data__input">
-                                            <div class="input-control__inner">
-                                                <input type="text" class="input-control__input input-control__input--label" id="data-date" placeholder="ДД/ММ/ГГГГ" data-inputmask="'mask': '99.99.9999'" required>
-                                                <label for="data-date" class="input-control__label">ДД/ММ/ГГГГ</label>
-                                                <svg class="input-control__icon">
-                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                                </svg>
+                        <div class="tabs__block personal-data">
+                            <div class="lk__wrapper">
+                                <div class="lk__block lk__block--wide">
+                                    <div class="personal-data__block">
+                                        <span class="personal-data__subtitle">Документ удостоверяющий личность</span>
+                                        <div class="personal-data__inner">
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-date" placeholder="ДД/ММ/ГГГГ" data-inputmask="'mask': '99.99.9999'" required>
+                                                    <label for="data-date" class="input-control__label">ДД/ММ/ГГГГ</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="input-control personal-data__input">
-                                            <div class="input-control__inner">
-                                                <input type="text" class="input-control__input input-control__input--label" id="data-series" placeholder="Серия" required>
-                                                <label for="data-series" class="input-control__label">Серия</label>
-                                                <svg class="input-control__icon input-control__icon--hidden">
-                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                                </svg>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-series" placeholder="Серия" required>
+                                                    <label for="data-series" class="input-control__label">Серия</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="input-control personal-data__input">
-                                            <div class="input-control__inner">
-                                                <input type="number" class="input-control__input input-control__input--label" id="data-number" placeholder="Номер" required>
-                                                <label for="data-number" class="input-control__label">Номер</label>
-                                                <svg class="input-control__icon input-control__icon--hidden">
-                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                                </svg>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="number" class="input-control__input input-control__input--label" id="data-number" placeholder="Номер" required>
+                                                    <label for="data-number" class="input-control__label">Номер</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="input-control personal-data__input">
-                                            <div class="input-control__inner">
-                                                <input type="text" class="input-control__input input-control__input--label" id="data-date-issue" placeholder="Дата выдачи" data-inputmask="'mask': '99.99.9999'" required>
-                                                <label for="data-date-issue" class="input-control__label">Дата выдачи</label>
-                                                <svg class="input-control__icon input-control__icon--hidden">
-                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                                </svg>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-date-issue" placeholder="Дата выдачи" data-inputmask="'mask': '99.99.9999'" required>
+                                                    <label for="data-date-issue" class="input-control__label">Дата выдачи</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="personal-data__block">
-                                    <div class="personal-data__inner">
-                                        <div class="input-control personal-data__input">
-                                            <div class="input-control__inner">
-                                                <input type="text" class="input-control__input input-control__input--label" id="data-issued-by" placeholder="Паспорт выдан" required>
-                                                <label for="data-issued-by" class="input-control__label">Паспорт выдан</label>
-                                                <svg class="input-control__icon input-control__icon--hidden">
-                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                                </svg>
+                                    <div class="personal-data__block">
+                                        <div class="personal-data__inner personal-data__inner--reverse">
+                                            <div class="add-files add-files--column personal-data__input">
+                                                <label for="add-snils" class="add-files__label">
+                                                    <input type="file" class="add-files__input" id="add-snils" multiple>
+                                                    <div class="add-files__group">
+                                                        <span class="add-files__title">Загрузить копию паспорта</span>
+                                                        <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                                    </div>
+                                                    <div class="add-files__image">
+                                                        <svg class="add-files__image-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                        </svg>
+                                                    </div>
+                                                </label>
+                                                <ul class="add-files__list">
+                                                    <li class="add-files__item">
+                                                        <div class="add-files__elem">
+                                                            <span class="add-files__name">Имя файла.doc</span>
+                                                            <button class="add-files__delete">
+                                                                <svg class="add-files__delete-icon">
+                                                                    <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li class="add-files__item">
+                                                        <div class="add-files__elem">
+                                                            <span class="add-files__name">Имя файла.doc</span>
+                                                            <button class="add-files__delete">
+                                                                <svg class="add-files__delete-icon">
+                                                                    <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="input-control personal-data__input">
-                                            <div class="input-control__inner">
-                                                <input type="text" class="input-control__input input-control__input--label" id="data-registration" placeholder="Прописка" required>
-                                                <label for="data-registration" class="input-control__label">Прописка</label>
-                                                <svg class="input-control__icon input-control__icon--hidden">
-                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                                </svg>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-issued-by" placeholder="Паспорт выдан" required>
+                                                    <label for="data-issued-by" class="input-control__label">Паспорт выдан</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-registration" placeholder="Прописка" required>
+                                                    <label for="data-registration" class="input-control__label">Прописка</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="add-files personal-data__block">
-                                    <label for="add-snils" class="add-files__label">
-                                        <input type="file" class="add-files__input" id="add-snils" multiple>
-                                        <div class="add-files__group">
-                                            <span class="add-files__title">Загрузить копию паспорта</span>
-                                            <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
-                                        </div>
-                                        <div class="add-files__image">
-                                            <svg class="add-files__image-icon">
-                                                <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
-                                            </svg>
-                                        </div>
-                                    </label>
-                                    <ul class="add-files__list">
-                                        <li class="add-files__item">
-                                            <div class="add-files__elem">
-                                                <span class="add-files__name">Имя файла.doc</span>
-                                                <button class="add-files__delete">
-                                                    <svg class="add-files__delete-icon">
-                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </li>
-                                        <li class="add-files__item">
-                                            <div class="add-files__elem">
-                                                <span class="add-files__name">Имя файла.doc</span>
-                                                <button class="add-files__delete">
-                                                    <svg class="add-files__delete-icon">
-                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="lk__wrapper">
-                            <div class="lk__block lk__block--fifty personal-data">
-                                <div class="input-control personal-data__input">
-                                    <span class="input-control__subtitle">СНИЛС</span>
-                                    <div class="input-control__inner">
-                                        <input type="text" class="input-control__input input-control__input--label" id="data-snils" placeholder="СНИЛС" required>
-                                        <label for="data-snils" class="input-control__label">СНИЛС</label>
-                                        <svg class="input-control__icon input-control__icon--hidden">
-                                            <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                        </svg>
+                            <div class="lk__wrapper">
+                                <div class="lk__block lk__block--fifty">
+                                    <div class="input-control personal-data__inner">
+                                        <div class="personal-data__input">
+                                            <span class="input-control__subtitle">СНИЛС</span>
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-snils" placeholder="СНИЛС" required>
+                                                <label for="data-snils" class="input-control__label">СНИЛС</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title">Загрузить копию свидетельства СНИЛС</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="add-files lk__add-files">
-                                    <label for="add-snils" class="add-files__label">
-                                        <input type="file" class="add-files__input" id="add-snils" multiple>
-                                        <div class="add-files__group">
-                                            <span class="add-files__title">Загрузить копию свидетельства СНИЛС</span>
-                                            <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
-                                        </div>
-                                        <div class="add-files__image">
-                                            <svg class="add-files__image-icon">
-                                                <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
-                                            </svg>
-                                        </div>
-                                    </label>
-                                    <ul class="add-files__list">
-                                        <li class="add-files__item">
-                                            <div class="add-files__elem">
-                                                <span class="add-files__name">Имя файла.doc</span>
-                                                <button class="add-files__delete">
-                                                    <svg class="add-files__delete-icon">
-                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
-                                                    </svg>
-                                                </button>
+                                <div class="lk__block lk__block--fifty">
+                                    <div class="input-control personal-data__inner">
+                                        <div class="input-control personal-data__input">
+                                            <span class="input-control__subtitle">ИНН</span>
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-inn" placeholder="ИНН" required>
+                                                <label for="data-inn" class="input-control__label">ИНН</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
                                             </div>
-                                        </li>
-                                        <li class="add-files__item">
-                                            <div class="add-files__elem">
-                                                <span class="add-files__name">Имя файла.doc</span>
-                                                <button class="add-files__delete">
-                                                    <svg class="add-files__delete-icon">
-                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
-                                                    </svg>
-                                                </button>
+                                        </div>
+                                    </div>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-inn" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-inn" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title">Загрузить копию свидетельства ИНН</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
                                             </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="lk__block lk__block--fifty personal-data">
-                                <div class="input-control personal-data__input">
-                                    <span class="input-control__subtitle">ИНН</span>
-                                    <div class="input-control__inner">
-                                        <input type="text" class="input-control__input input-control__input--label" id="data-inn" placeholder="ИНН" required>
-                                        <label for="data-inn" class="input-control__label">ИНН</label>
-                                        <svg class="input-control__icon input-control__icon--hidden">
-                                            <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
-                                        </svg>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="add-files lk__add-files">
-                                    <label for="add-inn" class="add-files__label">
-                                        <input type="file" class="add-files__input" id="add-inn" multiple>
-                                        <div class="add-files__group">
-                                            <span class="add-files__title">Загрузить копию свидетельства ИНН</span>
-                                            <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
-                                        </div>
-                                        <div class="add-files__image">
-                                            <svg class="add-files__image-icon">
-                                                <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
-                                            </svg>
-                                        </div>
-                                    </label>
-                                    <ul class="add-files__list">
-                                        <li class="add-files__item">
-                                            <div class="add-files__elem">
-                                                <span class="add-files__name">Имя файла.doc</span>
-                                                <button class="add-files__delete">
-                                                    <svg class="add-files__delete-icon">
-                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </li>
-                                        <li class="add-files__item">
-                                            <div class="add-files__elem">
-                                                <span class="add-files__name">Имя файла.doc</span>
-                                                <button class="add-files__delete">
-                                                    <svg class="add-files__delete-icon">
-                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
-                        </div>
-                        <div class="lk__bottom">
-                            <a href="#" class="lk__btn btn">Сохранить</a>
-                            <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            <div class="lk__bottom">
+                                <a href="#" class="lk__btn btn">Сохранить</a>
+                                <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            </div>
                         </div>
                     </div>
                     <div class="tabs__wrapper">
@@ -440,8 +451,7 @@
                                     </div>
                                 </div>
                                 <div class="lk__block lk__block--fifty">
-                                    <h3 class="lk__subtitle">СВИДЕТЕЛЬСТВО О ЗАКЛЮЧЕНИИ ли РАСТОРЖЕНИИ БРАКА (при наличии)
-                                    </h3>
+                                    <h3 class="lk__subtitle">СВИДЕТЕЛЬСТВО О ЗАКЛЮЧЕНИИ ли РАСТОРЖЕНИИ БРАКА (при наличии)</h3>
                                     <div class="add-files lk__add-files">
                                         <label for="add-snils" class="add-files__label">
                                             <input type="file" class="add-files__input" id="add-snils" multiple>
@@ -1086,6 +1096,526 @@
                                             <input type="file" class="add-files__input" id="add-snils" multiple>
                                             <div class="add-files__group">
                                                 <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk__bottom">
+                                <a href="#" class="lk__btn btn">Сохранить</a>
+                                <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__wrapper">
+                        <div class="tabs__block personal-data">
+                            <div class="lk__wrapper lk__wrapper--wrap">
+                                <div class="lk__block lk__block--fifty">
+                                    <div class="input-control personal-data__inner">
+                                        <div class="personal-data__input">
+                                            <span class="input-control__subtitle">СНИЛС</span>
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-snils" placeholder="СНИЛС" required>
+                                                <label for="data-snils" class="input-control__label">СНИЛС</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title">Загрузить копию свидетельства СНИЛС</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <div class="input-control personal-data__inner">
+                                        <div class="input-control personal-data__input">
+                                            <span class="input-control__subtitle">ИНН</span>
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-inn" placeholder="ИНН" required>
+                                                <label for="data-inn" class="input-control__label">ИНН</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-inn" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-inn" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title">Загрузить копию свидетельства ИНН</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Устав</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Листы записи об изменениях (может быть несколько)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Решение о создании</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Ранее выданные лицензии</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk__bottom">
+                                <a href="#" class="lk__btn btn">Сохранить</a>
+                                <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            </div>
+                        </div>
+                        <div class="tabs__block personal-data">
+                            <div class="lk__top">
+                                <h1 class="lk__heading">Паспорта, СНИЛСы, ИНН директоров и участников</h1>
+                            </div>
+                            <div class="lk__top">
+                                <h3 class="lk__subtitle lk__subtitle--accent">Фамилия И.О</h3>
+                                <a href="orders.html" class="add-btn lk__more-btn">
+                                    <span class="add-btn__text">Новый участник</span>
+                                    <svg class="add-btn__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-more"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="lk__wrapper">
+                                <div class="lk__block lk__block--wide">
+                                    <div class="personal-data__block">
+                                        <span class="personal-data__subtitle">Паспортные данные</span>
+                                        <div class="personal-data__inner">
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-surname" placeholder="Фамилия" required>
+                                                    <label for="data-surname" class="input-control__label">Фамилия</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-name" placeholder="Имя" required>
+                                                    <label for="data-name" class="input-control__label">Имя</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-patronymic" placeholder="Отчество" required>
+                                                    <label for="data-patronymic" class="input-control__label">Отчество</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="personal-data__block">
+                                        <div class="personal-data__inner">
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-date" placeholder="ДД/ММ/ГГГГ" data-inputmask="'mask': '99.99.9999'" required>
+                                                    <label for="data-date" class="input-control__label">ДД/ММ/ГГГГ</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-series" placeholder="Серия" required>
+                                                    <label for="data-series" class="input-control__label">Серия</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="number" class="input-control__input input-control__input--label" id="data-number" placeholder="Номер" required>
+                                                    <label for="data-number" class="input-control__label">Номер</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-date-issue" placeholder="Дата выдачи" data-inputmask="'mask': '99.99.9999'" required>
+                                                    <label for="data-date-issue" class="input-control__label">Дата выдачи</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="personal-data__block">
+                                        <div class="personal-data__inner personal-data__inner--reverse">
+                                            <div class="add-files add-files--column personal-data__input">
+                                                <label for="add-snils" class="add-files__label">
+                                                    <input type="file" class="add-files__input" id="add-snils" multiple>
+                                                    <div class="add-files__group">
+                                                        <span class="add-files__title">Загрузить копию паспорта</span>
+                                                        <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                                    </div>
+                                                    <div class="add-files__image">
+                                                        <svg class="add-files__image-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                        </svg>
+                                                    </div>
+                                                </label>
+                                                <ul class="add-files__list">
+                                                    <li class="add-files__item">
+                                                        <div class="add-files__elem">
+                                                            <span class="add-files__name">Имя файла.doc</span>
+                                                            <button class="add-files__delete">
+                                                                <svg class="add-files__delete-icon">
+                                                                    <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li class="add-files__item">
+                                                        <div class="add-files__elem">
+                                                            <span class="add-files__name">Имя файла.doc</span>
+                                                            <button class="add-files__delete">
+                                                                <svg class="add-files__delete-icon">
+                                                                    <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-issued-by" placeholder="Паспорт выдан" required>
+                                                    <label for="data-issued-by" class="input-control__label">Паспорт выдан</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control personal-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input input-control__input--label" id="data-registration" placeholder="Прописка" required>
+                                                    <label for="data-registration" class="input-control__label">Прописка</label>
+                                                    <svg class="input-control__icon input-control__icon--hidden">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk__wrapper">
+                                <div class="lk__block lk__block--fifty">
+                                    <div class="input-control personal-data__inner">
+                                        <div class="personal-data__input">
+                                            <span class="input-control__subtitle">СНИЛС</span>
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-snils" placeholder="СНИЛС" required>
+                                                <label for="data-snils" class="input-control__label">СНИЛС</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title">Загрузить копию свидетельства СНИЛС</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <div class="input-control personal-data__inner">
+                                        <div class="input-control personal-data__input">
+                                            <span class="input-control__subtitle">ИНН</span>
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-inn" placeholder="ИНН" required>
+                                                <label for="data-inn" class="input-control__label">ИНН</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-inn" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-inn" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title">Загрузить копию свидетельства ИНН</span>
                                                 <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
                                             </div>
                                             <div class="add-files__image">
