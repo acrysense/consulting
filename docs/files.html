@@ -178,7 +178,954 @@
             </header>
             <!-- end of header -->
             <div class="lk__container">
-                <h1 class="lk__heading">Файлы</h1>
+                <div class="lk__top">
+                    <h1 class="lk__heading">Файлы</h1>
+                </div>
+                <div class="tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item tabs__item--active">
+                            <button class="tabs__tab">Основные</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__tab">Дополнительные документы</button>
+                        </li>
+                    </ul>
+                    <div class="tabs__wrapper tabs__wrapper--active">
+                        <div class="lk__wrapper">
+                            <div class="lk__block lk__block--wide personal-data">
+                                <div class="personal-data__block">
+                                    <span class="personal-data__subtitle">Документ удостоверяющий личность</span>
+                                    <div class="personal-data__inner">
+                                        <div class="input-control personal-data__input">
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-date" placeholder="ДД/ММ/ГГГГ" data-inputmask="'mask': '99.99.9999'" required>
+                                                <label for="data-date" class="input-control__label">ДД/ММ/ГГГГ</label>
+                                                <svg class="input-control__icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="input-control personal-data__input">
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-series" placeholder="Серия" required>
+                                                <label for="data-series" class="input-control__label">Серия</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="input-control personal-data__input">
+                                            <div class="input-control__inner">
+                                                <input type="number" class="input-control__input input-control__input--label" id="data-number" placeholder="Номер" required>
+                                                <label for="data-number" class="input-control__label">Номер</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="input-control personal-data__input">
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-date-issue" placeholder="Дата выдачи" data-inputmask="'mask': '99.99.9999'" required>
+                                                <label for="data-date-issue" class="input-control__label">Дата выдачи</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="personal-data__block">
+                                    <div class="personal-data__inner">
+                                        <div class="input-control personal-data__input">
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-issued-by" placeholder="Паспорт выдан" required>
+                                                <label for="data-issued-by" class="input-control__label">Паспорт выдан</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="input-control personal-data__input">
+                                            <div class="input-control__inner">
+                                                <input type="text" class="input-control__input input-control__input--label" id="data-registration" placeholder="Прописка" required>
+                                                <label for="data-registration" class="input-control__label">Прописка</label>
+                                                <svg class="input-control__icon input-control__icon--hidden">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-files personal-data__block">
+                                    <label for="add-snils" class="add-files__label">
+                                        <input type="file" class="add-files__input" id="add-snils" multiple>
+                                        <div class="add-files__group">
+                                            <span class="add-files__title">Загрузить копию паспорта</span>
+                                            <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                        </div>
+                                        <div class="add-files__image">
+                                            <svg class="add-files__image-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <ul class="add-files__list">
+                                        <li class="add-files__item">
+                                            <div class="add-files__elem">
+                                                <span class="add-files__name">Имя файла.doc</span>
+                                                <button class="add-files__delete">
+                                                    <svg class="add-files__delete-icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="add-files__item">
+                                            <div class="add-files__elem">
+                                                <span class="add-files__name">Имя файла.doc</span>
+                                                <button class="add-files__delete">
+                                                    <svg class="add-files__delete-icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk__wrapper">
+                            <div class="lk__block lk__block--fifty personal-data">
+                                <div class="input-control personal-data__input">
+                                    <span class="input-control__subtitle">СНИЛС</span>
+                                    <div class="input-control__inner">
+                                        <input type="text" class="input-control__input input-control__input--label" id="data-snils" placeholder="СНИЛС" required>
+                                        <label for="data-snils" class="input-control__label">СНИЛС</label>
+                                        <svg class="input-control__icon input-control__icon--hidden">
+                                            <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="add-files lk__add-files">
+                                    <label for="add-snils" class="add-files__label">
+                                        <input type="file" class="add-files__input" id="add-snils" multiple>
+                                        <div class="add-files__group">
+                                            <span class="add-files__title">Загрузить копию свидетельства СНИЛС</span>
+                                            <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                        </div>
+                                        <div class="add-files__image">
+                                            <svg class="add-files__image-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <ul class="add-files__list">
+                                        <li class="add-files__item">
+                                            <div class="add-files__elem">
+                                                <span class="add-files__name">Имя файла.doc</span>
+                                                <button class="add-files__delete">
+                                                    <svg class="add-files__delete-icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="add-files__item">
+                                            <div class="add-files__elem">
+                                                <span class="add-files__name">Имя файла.doc</span>
+                                                <button class="add-files__delete">
+                                                    <svg class="add-files__delete-icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lk__block lk__block--fifty personal-data">
+                                <div class="input-control personal-data__input">
+                                    <span class="input-control__subtitle">ИНН</span>
+                                    <div class="input-control__inner">
+                                        <input type="text" class="input-control__input input-control__input--label" id="data-inn" placeholder="ИНН" required>
+                                        <label for="data-inn" class="input-control__label">ИНН</label>
+                                        <svg class="input-control__icon input-control__icon--hidden">
+                                            <use xlink:href="img/dist/sprite.svg#icon-mark-done"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="add-files lk__add-files">
+                                    <label for="add-inn" class="add-files__label">
+                                        <input type="file" class="add-files__input" id="add-inn" multiple>
+                                        <div class="add-files__group">
+                                            <span class="add-files__title">Загрузить копию свидетельства ИНН</span>
+                                            <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                        </div>
+                                        <div class="add-files__image">
+                                            <svg class="add-files__image-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <ul class="add-files__list">
+                                        <li class="add-files__item">
+                                            <div class="add-files__elem">
+                                                <span class="add-files__name">Имя файла.doc</span>
+                                                <button class="add-files__delete">
+                                                    <svg class="add-files__delete-icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="add-files__item">
+                                            <div class="add-files__elem">
+                                                <span class="add-files__name">Имя файла.doc</span>
+                                                <button class="add-files__delete">
+                                                    <svg class="add-files__delete-icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk__bottom">
+                            <a href="#" class="lk__btn btn">Сохранить</a>
+                            <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                        </div>
+                    </div>
+                    <div class="tabs__wrapper">
+                        <div class="tabs__block">
+                            <div class="lk__wrapper lk__wrapper--wrap">
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">КРЕДИТНЫЕ ДОКУМЕНТЫ (Кредитные договоры и графики платежей)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">СВИДЕТЕЛЬСТВО О ЗАКЛЮЧЕНИИ ли РАСТОРЖЕНИИ БРАКА (при наличии)
+                                    </h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">СВИДЕТЕЛЬСТВО О РОЖДЕНИИ НЕСОВЕРШЕННОЛЕТНИХ ДЕТЕЙ <span>(при наличии)</span></h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">СПРАВКА из ПФР по форме «СЗИ-6» (Извещение о состоянии индивидуального лицевого счета)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">СПРАВКИ 2НДФЛ С МЕСТА РАБОТЫ (за последние 3 года / Для ИП – налоговые декларации)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">ВЫПИСКА ПО СЧЕТУ о движении средств, с указанием исходящего остатка </h3>
+                                    <div class="add-files add-files--added add-files--hidden lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item add-files__item--more">
+                                                <a href="#" class="add-files__more">Посмотреть все файлы</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk__bottom">
+                                <a href="#" class="lk__btn btn">Сохранить</a>
+                                <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            </div>
+                        </div>
+                        <div class="tabs__block">
+                            <div class="lk__top">
+                                <h1 class="lk__heading">Документы при их наличии</h1>
+                            </div>
+                            <div class="lk__wrapper lk__wrapper--wrap">
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Решения судов, постановления о возбуждении исполнительных производств судебными при-ставами, долговые расписки, и прочие документы, подтверждающие наличие долговых обязательств</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Договор аренды квартиры / комнаты (если в собственности нет жилой недвижимости, в т.ч. долевой)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Документы подтверждающие права собственности на имущество (движимую, недвижимую)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Документы о совершавшихся сделках свыше 300 000 руб. (в течении 3 лет до банкротства)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Свидетельство о смерти близких родственников (если это имеет отношение к банкротству)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Справка с места обучения ребенка (если учится на очной форме и возраст от 18 до 21 года)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Пенсионное удостоверение (+ справка о размере пенсии)</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Сведения об участии в юридических лицах / ИП</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Справка об инвалидности</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Справка о беременности</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lk__block lk__block--fifty">
+                                    <h3 class="lk__subtitle">Брачный договор</h3>
+                                    <div class="add-files lk__add-files">
+                                        <label for="add-snils" class="add-files__label">
+                                            <input type="file" class="add-files__input" id="add-snils" multiple>
+                                            <div class="add-files__group">
+                                                <span class="add-files__title add-files__title--grey">Выберите файл</span>
+                                                <span class="add-files__description">Размер файла не более 20Мб, расширения jpg, png, pdf, doc</span>
+                                            </div>
+                                            <div class="add-files__image">
+                                                <svg class="add-files__image-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-camera"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                        <ul class="add-files__list">
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="add-files__item">
+                                                <div class="add-files__elem">
+                                                    <span class="add-files__name">Имя файла.doc</span>
+                                                    <button class="add-files__delete">
+                                                        <svg class="add-files__delete-icon">
+                                                            <use xlink:href="img/dist/sprite.svg#icon-delete"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk__bottom">
+                                <a href="#" class="lk__btn btn">Сохранить</a>
+                                <a href="#" class="lk__btn btn btn--transparent btn--no-pd">Отменить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
