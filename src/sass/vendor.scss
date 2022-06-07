@@ -1,0 +1,20 @@
+// fonts load section
+@mixin font($fname, $fstyle, $fweight, $furl1, $furl2, $furl3) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		font-display: swap;
+        src: local($fname), url($furl1) format('woff2'), url($furl2) format('woff'), url($furl3) format('embedded-opentype');
+    }
+}
+
+@include font('Geometria', normal, 300, '../fonts/Geometria/Geometria-Light.woff2', '../fonts/Geometria/Geometria-Light.woff', '../fonts/Geometria/Geometria-Light.eot');
+@include font('Geometria', normal, 400, '../fonts/Geometria/Geometria.woff2', '../fonts/Geometria/Geometria.woff', '../fonts/Geometria/Geometria.eot');
+@include font('Geometria', normal, 500, '../fonts/Geometria/Geometria-Medium.woff2', '../fonts/Geometria/Geometria-Medium.woff', '../fonts/Geometria/Geometria-Medium.eot');
+@include font('Geometria', normal, 700, '../fonts/Geometria/Geometria-Bold.woff2', '../fonts/Geometria/Geometria-Bold.woff', '../fonts/Geometria/Geometria-Bold.eot');
+
+// import section
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // bootstrap reboot collection
+@import 'node_modules/slim-select/dist/slimselect'; // slim select
+@import 'node_modules/simplebar/dist/simplebar'; // simplebar

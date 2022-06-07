@@ -1,0 +1,62 @@
+// vertical
+.simplebar-track.simplebar-vertical {
+    width: 2px;
+    height: 100%;
+    background: transparent;
+    background-clip: content-box;
+}
+.simplebar-scrollbar {
+    height: 100%;
+    &::before {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        background: $gray-color;
+        border-radius: 12px;
+    }
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+    top: 0;
+    bottom: 0;
+}
+.simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+}
+.simplebar-content {
+    padding: 0;
+}
+
+// horizontal
+.simplebar-track.simplebar-horizontal {
+    height: 4px;
+    background: transparent;
+    background-clip: content-box;
+}
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    top: 0;
+    height: 4px;
+}
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+    left: 0;
+    right: 0;
+}
+.simplebar-scrollbar {
+    &::before {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        background: $gray-color;
+        border-radius: 12px;
+    }
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+    top: 0;
+    bottom: 0;
+}
+.simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+}
